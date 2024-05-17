@@ -4,11 +4,11 @@ declare(strict_types=1);
 
 namespace App\CQRS;
 
+use Ramsey\Uuid\Uuid;
 use Ramsey\Uuid\UuidInterface;
 
 final readonly class Operation implements OperationInterface
 {
-
     public static function create(): OperationInterface
     {
         return new self(
