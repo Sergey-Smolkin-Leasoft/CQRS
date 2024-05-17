@@ -6,7 +6,7 @@ namespace App\CQRS;
 
 interface CommandBusInterface 
 {
-    public function dispatch(CommandInterface $command): void;
+    public function dispatch(CommandInterface $command): OperationInterface;
 
     public function dispatchMany();
 }
