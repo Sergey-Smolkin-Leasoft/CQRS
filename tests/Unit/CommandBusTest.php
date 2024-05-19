@@ -27,6 +27,6 @@ final class CommandBusTest extends TestCase
             password: 'pass'
         ));
 
-        $this->assertInstanceOf(UuidInterface::class,$operation->getUuid());
+        $this->assertInstanceOf(UuidInterface::class, $operation->getUuid());
     }
 }
