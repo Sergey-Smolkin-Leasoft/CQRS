@@ -6,7 +6,6 @@ namespace App\Application;
 
 use App\Application\Bootloader\AppBootloader;
 use App\Application\Bootloader\CQRSBootloader;
-use App\Application\Bootloader\ExceptionHandlerBootloader;
 use App\Application\Bootloader\RoutesBootloader;
 use Spiral\Boot\Bootloader\CoreBootloader;
 use Spiral\Bootloader as Framework;
@@ -69,8 +68,8 @@ class Kernel extends \Spiral\Framework\Kernel
             PrototypeBootloader::class,
 
             // Application domain
-            AppBootloader::class,
             RoutesBootloader::class,
+            AppBootloader::class,
             CQRSBootloader::class,
         ];
     }
