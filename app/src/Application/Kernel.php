@@ -37,7 +37,6 @@ class Kernel extends \Spiral\Framework\Kernel
         return [
             MonologBootloader::class,
             YiiErrorHandlerBootloader::class,
-            ExceptionHandlerBootloader::class,
 
             // RoadRunner
             RoadRunnerBridge\LoggerBootloader::class,
